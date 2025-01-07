@@ -59,15 +59,14 @@ public class Main {
         String numberString = Integer.toString(num);
         StringBuilder result = new StringBuilder();
 
-        // Her basamağı tek tek işle
+
         for (int i = 0; i < numberString.length(); i++) {
-            // Basamağı al
+
             int digit = Character.getNumericValue(numberString.charAt(i));
 
-            // Rakamın karşılık gelen yazısını ekle
             result.append(NUMBERS[digit]);
 
-            // Eğer son basamağa gelmediysek, boşluk ekle
+
             if (i < numberString.length() - 1) {
                 result.append(" ");
             }
